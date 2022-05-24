@@ -1,16 +1,4 @@
 <section class="products">
-    <mat-card class="card" *ngFor="let product of products">
-        <mat-card-header>{{product.name}}             
-        </mat-card-header>
-        <mat-card-content>
-            {{product.description}}
-        </mat-card-content>
-        <mat-card-actions>
-            <button mat-flat-button color="primary">Buy
-                <mat-icon>home</mat-icon>
-            </button>
-            
-        </mat-card-actions>
-
-    </mat-card>
+    <app-product [product]="product" 
+    *ngFor="let product of products"></app-product>
 </section>
